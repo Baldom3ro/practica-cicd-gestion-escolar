@@ -41,6 +41,7 @@ jobs:
     needs: validar-y-probar
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       pages: write
       id-token: write
     environment:
