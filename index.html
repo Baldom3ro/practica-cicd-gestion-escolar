@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión Escolar | Demo CI/CD</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="encabezado">
+    <h1>Gestión Escolar</h1>
+    <p>Aplicación demostrativa para la práctica de CI/CD</p>
+  </header>
+
+  <main class="contenedor">
+    <section class="resumen">
+      <article class="tarjeta">
+        <span class="numero" id="total-estudiantes">3</span>
+        <span>Estudiantes registrados</span>
+      </article>
+      <article class="tarjeta">
+        <span class="numero" id="estado-servicio">En línea</span>
+        <span>Estado de la aplicación</span>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>Registro de estudiantes</h2>
+      <form id="form-estudiante">
+        <label for="nombre">Nombre del estudiante</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Ej. Ana López" required>
+        <label for="matricula">Matrícula</label>
+        <input id="matricula" name="matricula" type="text" placeholder="Ej. TI-001" required>
+        <button type="submit">Agregar estudiante</button>
+      </form>
+      <p id="mensaje" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Listado de estudiantes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Matrícula</th>
+            <th>Nombre</th>
+          </tr>
+        </thead>
+        <tbody id="lista-estudiantes">
+          <tr>
+            <td>TI-001</td>
+            <td>María Pérez</td>
+          </tr>
+          <tr>
+            <td>TI-002</td>
+            <td>José Hernández</td>
+          </tr>
+          <tr>
+            <td>TI-003</td>
+            <td>Laura Sánchez</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>Práctica académica: integración, liberación y despliegue continuo</footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
